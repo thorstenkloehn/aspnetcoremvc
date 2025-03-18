@@ -3,7 +3,9 @@ theme:
   name: 'material'
   language: de
 nav:
-  - Installieren: index.md
+  - Installieren:
+    - Aspnet core Mvc: Aspnetcore.md
+
 plugins:
   - search
   - mkdocs-video
