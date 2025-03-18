@@ -1,0 +1,43 @@
+# ASP.NET Core MVC .gitignore
+
+# Build Folders
+bin/
+obj/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+*.vspscc
+*.vssscc
+/docs/.venv
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# Configuration files
+appsettings.json
+appsettings.*.json
+
+# Logs
+*.log
+
+# Visual Studio Code
+.vscode/
+
+# Rider
+.idea/
+
+# DotNet
+*.swp
+*.sln.ide
+*.sln.docstates
+/ahrensburg.city/app.db
+
+/ahrensburg.city/Data/Migrations
+/ahrensburg.city/Migrations
+/data/Migrations/*
