@@ -7,7 +7,7 @@ graph TD
     B --> C[.NET SDK installieren]
     C --> D[Visual Studio Code installieren]
     D --> E[Visual Studio Code Erweiterungen installieren]
-    E --> F[Entity Framework]
+    E --> F[Entity Framework Installieren]
     F --> G[Anwendung herunderladen]
 
 ```
@@ -34,5 +34,13 @@ sudo snap install code --classic
 ```
 code --install-extension ms-dotnettools.csdevkit # Installiert die C# Dev Kit Erweiterung
 ```
+## Entity Framework Installieren
+```bash
+dotnet tool install --global dotnet-ef
+```
+
+## Anwendung herunterladen
+```bash
+git clone https://github.com/thorstenkloehn/aspnetcoremvc.git
 ![type:video](https://www.youtube.com/embed/LXb3EKWsInQ)
 
