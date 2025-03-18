@@ -14,7 +14,6 @@ obj/
 # Auto-generated files
 *.vspscc
 *.vssscc
-docs/.venv
 
 # ASP.NET Scaffolding
 ScaffoldingReadMe.txt
