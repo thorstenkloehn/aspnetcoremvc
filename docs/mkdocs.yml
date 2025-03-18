@@ -4,7 +4,8 @@ theme:
   language: de
 nav:
   - Installieren:
-    - Aspnet core Mvc: Aspnetcore.md
+    - Asp Net core Mvc: Installieren/Aspnetcore.md
+    - Mkdocs: Installieren/Mkdocs.md
 
 plugins:
   - search

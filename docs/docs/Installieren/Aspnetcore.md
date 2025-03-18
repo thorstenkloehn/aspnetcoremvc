@@ -42,5 +42,6 @@ dotnet tool install --global dotnet-ef
 ## Anwendung herunterladen
 ```bash
 git clone https://github.com/thorstenkloehn/aspnetcoremvc.git
+```
 ![type:video](https://www.youtube.com/embed/LXb3EKWsInQ)
 
