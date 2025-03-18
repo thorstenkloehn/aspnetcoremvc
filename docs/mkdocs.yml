@@ -1,0 +1,21 @@
+site_name: ahrensburg.city
+theme:
+  name: 'material'
+  language: de
+nav:
+  - Installieren: index.md
+plugins:
+  - search
+  - mkdocs-video
+extra:
+  consent:
+    title: Cookie-Zustimmung
+    description: >-
+      Wir verwenden Cookies, um Ihre Besuche und Präferenzen zu erkennen und die
+      Effektivität unserer Dokumentation zu messen.
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
