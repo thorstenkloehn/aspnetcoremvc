@@ -186,6 +186,27 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Startseite
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -198,10 +219,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -213,8 +234,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_1">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Installieren
           </label>
@@ -326,9 +347,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#gh-pages" class="md-nav__link">
+  <a href="#node-gh-pages" class="md-nav__link">
     <span class="md-ellipsis">
-      GH-Pages
+      node GH-Pages
     </span>
   </a>
   
@@ -408,9 +429,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#gh-pages" class="md-nav__link">
+  <a href="#node-gh-pages" class="md-nav__link">
     <span class="md-ellipsis">
-      GH-Pages
+      node GH-Pages
     </span>
   </a>
   
@@ -434,16 +455,21 @@
 
   <h1>Mkdocs</h1>
 
-<div><h2 id="mkdocs-mit-material-theme-installieren">Mkdocs mit Material Theme installieren</h2>
+<div><pre class="mermaid"><code>graph TD
+    A[Pip] --&gt; B[mkdocs-material installieren]
+    B --&gt; C[mkdocs-video Installieren]
+    D[Node] --&gt; E[gh-pages installieren]</code></pre>
+<h2 id="mkdocs-mit-material-theme-installieren">Mkdocs mit Material Theme installieren</h2>
 <p>MkDocs mit material ist ein einfaches Werkzeug, um statische Webseiten zu erstellen. Es ist in Python geschrieben und kann mit dem Paketmanager pip installiert werden.
-</p><div class="highlight"><pre><span></span><code><span class="nb">cd</span><span class="w"> </span>docs
-pip<span class="w"> </span>install<span class="w"> </span>mkdocs-material
+</p><div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-material
 </code></pre></div>
 <h2 id="pflugin-mkdocs-material">Pflugin mkdocs-material</h2>
 <h3 id="video">Video</h3>
-<div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-video
+<p>Das Plugin mkdocs-video ermöglicht das Einbetten von Videos in die Dokumentation.
+</p><div class="highlight"><pre><span></span><code>pip<span class="w"> </span>install<span class="w"> </span>mkdocs-video
 </code></pre></div>
-<h2 id="gh-pages">GH-Pages</h2>
+<h2 id="node-gh-pages">node GH-Pages</h2>
+<p>Das Plugin node gh-pages ermöglicht das Veröffentlichen von Dokumentationen auf GitHub Pages.</p>
 <div class="highlight"><pre><span></span><code>npm<span class="w"> </span>install
 </code></pre></div></div>
 

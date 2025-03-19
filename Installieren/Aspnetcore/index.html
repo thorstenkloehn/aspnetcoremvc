@@ -186,6 +186,27 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.md" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Startseite
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -198,10 +219,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -213,8 +234,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_1">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
             Installieren
           </label>
@@ -334,6 +355,39 @@
   <a href="#anwendung-herunterladen" class="md-nav__link">
     <span class="md-ellipsis">
       Anwendung herunterladen
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#postgresql-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      Postgresql installieren
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Postgresql installieren">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#postgrsql-module-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      Postgrsql Module installieren
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nuget-pakete-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nuget Pakete installieren
     </span>
   </a>
   
@@ -470,6 +524,39 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#postgresql-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      Postgresql installieren
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Postgresql installieren">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#postgrsql-module-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      Postgrsql Module installieren
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nuget-pakete-installieren" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nuget Pakete installieren
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -496,6 +583,9 @@
     D --&gt; E[Visual Studio Code Erweiterungen installieren]
     E --&gt; F[Entity Framework Installieren]
     F --&gt; G[Anwendung herunderladen]
+    G --&gt; H[Postgresql installieren]
+    H --&gt; I[Postgresql Module installieren]
+    J --&gt; K[Nuget Pakete installieren]
 </code></pre>
 <h2 id="net-sdk-installieren">.NET SDK installieren</h2>
 <p>Öffne Sie das Terminal und auf ihrem Ubuntu-Desktop
@@ -519,9 +609,20 @@ sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w
 <div class="highlight"><pre><span></span><code>dotnet<span class="w"> </span>tool<span class="w"> </span>install<span class="w"> </span>--global<span class="w"> </span>dotnet-ef
 </code></pre></div>
 <h2 id="anwendung-herunterladen">Anwendung herunterladen</h2>
-<p></p><div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/thorstenkloehn/aspnetcoremvc.git
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/thorstenkloehn/aspnetcoremvc.git
 </code></pre></div>
-<div class="video-container"><iframe src="https://www.youtube.com/embed/LXb3EKWsInQ" style="position:relative;width:100%;height:22.172vw" frameborder="0" allowfullscreen alt="type:video"></iframe></div></div>
+<h2 id="postgresql-installieren">Postgresql installieren</h2>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>postgresql-all
+</code></pre></div>
+<h3 id="postgrsql-module-installieren">Postgrsql Module installieren</h3>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>postgis<span class="w"> </span>postgresql-16-postgis-3<span class="w"> </span>postgresql-16-postgis-3-scripts<span class="w"> </span>postgresql-16-pgvector
+</code></pre></div>
+<h2 id="nuget-pakete-installieren">Nuget Pakete installieren</h2>
+<ul>
+<li><a href="https://www.nuget.org/packages/npgsql/">Npgsql</a> </li>
+<li><a href="https://www.nuget.org/packages/npgsql.entityframeworkcore.postgresql.nettopologysuite/">Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite</a> </li>
+<li><a href="https://www.nuget.org/packages/npgsql.entityframeworkcore.postgresql/">Npgsql.EntityFrameworkCore.PostgreSQL </a> </li>
+</ul></div>
 
 
 
