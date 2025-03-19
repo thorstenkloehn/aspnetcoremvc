@@ -7,6 +7,7 @@ nav:
   - Installieren:
     - Asp Net core Mvc: Installieren/Aspnetcore.md
     - Mkdocs: Installieren/Mkdocs.md
+  - Konfiguration: Konfiguration/index.md
 
 plugins:
   - search

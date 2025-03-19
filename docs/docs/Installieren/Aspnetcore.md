@@ -11,7 +11,10 @@ graph TD
     F --> G[Anwendung herunderladen]
     G --> H[Postgresql installieren]
     H --> I[Postgresql Module installieren]
-    J --> K[Nuget Pakete installieren]
+    I --> J[Nuget Pakete installieren]
+    J --> K[osm2pgsql und osmosis]
+
+  
 
 ```
 
