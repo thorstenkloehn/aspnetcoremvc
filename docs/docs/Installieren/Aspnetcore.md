@@ -9,6 +9,9 @@ graph TD
     D --> E[Visual Studio Code Erweiterungen installieren]
     E --> F[Entity Framework Installieren]
     F --> G[Anwendung herunderladen]
+    G --> H[Postgresql installieren]
+    H --> I[Postgresql Module installieren]
+    J --> K[Nuget Pakete installieren]
 
 ```
 
@@ -43,5 +46,17 @@ dotnet tool install --global dotnet-ef
 ```bash
 git clone https://github.com/thorstenkloehn/aspnetcoremvc.git
 ```
-![type:video](https://www.youtube.com/embed/LXb3EKWsInQ)
+## Postgresql installieren
+```bash
+sudo apt-get install postgresql-all
+```
+### Postgrsql Module installieren
+```bash
+sudo apt install postgis postgresql-16-postgis-3 postgresql-16-postgis-3-scripts postgresql-16-pgvector
+```
+## Nuget Pakete installieren
+
+* [Npgsql](https://www.nuget.org/packages/npgsql/) 
+* [Npgsql.EntityFrameworkCore.PostgreSQL.NetTopologySuite](https://www.nuget.org/packages/npgsql.entityframeworkcore.postgresql.nettopologysuite/) 
+* [Npgsql.EntityFrameworkCore.PostgreSQL ](https://www.nuget.org/packages/npgsql.entityframeworkcore.postgresql/) 
 

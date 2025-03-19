@@ -14,8 +14,8 @@ obj/
 # Auto-generated files
 *.vspscc
 *.vssscc
-/docs/.venv
-/docs/node_modules
+.venv
+docs/node_modules
 /docs/site
 
 # ASP.NET Scaffolding

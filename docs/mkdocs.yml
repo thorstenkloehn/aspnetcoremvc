@@ -3,6 +3,7 @@ theme:
   name: 'material'
   language: de
 nav:
+  - Startseite: index.md
   - Installieren:
     - Asp Net core Mvc: Installieren/Aspnetcore.md
     - Mkdocs: Installieren/Mkdocs.md
