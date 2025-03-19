@@ -43,7 +43,7 @@ osm2pgsql  -d thorsten --create  -G --hstore  ahrensburg.pbf
 ## Vorhandene Datenbank einrichten
 ```bash
 cd $HOME/aspnetcoremvc
-dotnet ef dbcontext scaffold "Host=localhost;Database=Test;Username=Test;Password=Test" Npgsql.EntityFrameworkCore.PostgreSQL -o Models -c ApplicationDbContext -t planet_osm_line -t planet_osm_point -t planet_osm_point -t planet_osm_polygon -t planet_osm_roads 
+dotnet ef dbcontext scaffold "Host=localhost;Database=Test;Username=Test;Password=Test" Npgsql.EntityFrameworkCore.PostgreSQL -o Models -c ApplicationDbContext -t planet_osm_line -t planet_osm_point -t planet_osm_point -t planet_osm_polygon -t planet_osm_roads -
 ```
 ## Migrationen erstellen
 ```bash
